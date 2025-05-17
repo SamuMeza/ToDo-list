@@ -39,8 +39,6 @@ Aplicación web de lista de tareas implementada con Programación Orientada a Ob
 - JavaScript (ES6+)
 - DOM Manipulation
 - Programación Orientada a Objetos
-- Web Animations API
-- Local Storage (para persistencia)
 
 ## Clases Principales
 
