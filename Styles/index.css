@@ -1,0 +1,133 @@
+/* Estilos generales del To Do List*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, sans-serif;
+  background-color: hsl(0, 0%, 93%);
+  padding: 2em;
+}
+
+.container {
+    border-radius: .5em;
+    background-color: white;
+    width: 65vw;
+    text-align: center;
+    margin: 0 auto;
+    border: 2px solid hsl(0, 0%, 65%);
+    padding: 1.3em .6em;
+    margin-bottom: 1.3em;
+}
+
+.title{
+    font-size: 1.9em;
+    color: steelblue;
+    margin-bottom: .6em;
+}
+
+.message{
+    display: block;
+    font-size: .7em;
+    color: grey;
+}
+
+.task-input{
+    width: 37vw;
+    padding: .6em;
+    border-radius: .4em;
+    border: .2em solid hsl(120, 50%, 25%);
+    margin: 0 0 .6em 0;
+}
+
+.task-btn{
+    font-size: .8em;
+    padding: .6em;
+    border-radius: .4em;
+    border: .2em solid hsl(120, 50%, 25%);
+    background-color: hsl(120, 50%, 25%);
+    color: white;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.task-list-container{
+    list-style: none;
+    text-align: center;
+    border: 2px solid hsl(0, 0%, 65%);
+    width: 65vw;
+    margin: 0 auto;
+    padding: 1em .4em;
+    border-radius: .5em;
+    background-color: white;
+}
+
+.task-check, .task-item, .task-delete{
+    list-style: none;
+    margin: .1em 1em;
+    font-size: .9em;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.task-item{
+    font-size: 1.1em;
+}
+
+.task-delete{
+    padding: .3em;
+    border-radius: .3em;
+    border: .2em solid hsl(0, 70%, 55%);
+    background-color: hsl(0, 70%, 55%);;
+    color: white;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.task-container{
+    border-bottom: .2em solid hsl(0, 0%, 65%);
+    margin: .5em 0;
+    padding: .2em;
+    border-radius: .4em;
+}
+
+.task-message{
+    font-size: 1.1em;
+    color: hsl(0, 0%, 50%);
+    margin: 0;
+    text-decoration: underline grey .1em;
+}
+
+/* Estilos de tachado de tareas */
+
+.task-item.completed{
+    text-decoration: line-through;
+    color: hsl(0, 0%, 50%);
+}
+
+.task-delete.completed{
+    color: hsl(0, 0%, 50%);
+    background-color: hsl(0, 0%, 85%);
+    border: .2em solid hsl(0, 0%, 85%);
+}
+
+/* Estilos de los botones con especificidad */
+
+.task-btn:hover {
+    background-color: hsl(120, 50%, 50%);
+    border: .2em solid hsl(120, 50%, 50%);
+}
+
+.task-input:focus{
+    outline: none;
+    border-color: hsl(120, 50%, 40%);
+}
+
+.task-delete:hover {
+    background-color: hsl(0, 70%, 35%);
+    border: .2em solid hsl(0, 70%, 35%);
+    color: white;
+}
